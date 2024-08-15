@@ -24,6 +24,10 @@ const StyledHeader = styled.header`
   backdrop-filter: blur(10px);
   transition: var(--transition);
 
+  a {
+    align-content: center;
+  }
+
   @media (max-width: 1080px) {
     padding: 0 40px;
   }
@@ -64,8 +68,6 @@ const StyledNav = styled.nav`
 
   .logo {
     ${({ theme }) => theme.mixins.flexCenter};
-
-    align-content: center;
 
     a {
       color: var(--green);
