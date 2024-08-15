@@ -29,6 +29,10 @@ const StyledHeroSection = styled.section`
     }
   }
 
+  .green {
+    color: var(--green);
+  }
+
   h3 {
     margin-top: 5px;
     color: var(--slate);
@@ -60,28 +64,21 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const two = <h2 className="big-heading">Zille Muhammad Jafary.</h2>;
+  const three = <h3 className="medium-heading">but if that’s a mouthful, just go with Jeffery!</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
-        </a>
-        .
-      </p>
+      I'm a software engineer with over 7 years of experience in developing and designing cutting-edge web applications. I specialize in <span className="green">Laravel</span>, <span className="green">PHP</span>, <span className="green">Node.js</span>, <span className="green">React</span>, <span className="green">Vue</span>, and <span className="green">AWS</span>, delivering advanced <span className="green">E-commerce</span> and <span className="green">AI-driven solutions </span> for <span className="green">Shopify</span> and <span className="green">WordPress</span>.      </p>
     </>
   );
   const five = (
     <a
       className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
+      href="/resume.pdf"
       target="_blank"
       rel="noreferrer">
-      Check out my course!
+      Check out my resume!
     </a>
   );
 

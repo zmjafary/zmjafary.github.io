@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "portfolio",
+  "description": "Zille Muhammad Jafary | Software Engineer",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Zille Muhamamd Jafary <me@zmjafary.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/zmjafary/zmjafary.github.io"
   },
   "keywords": [
     "gatsby"
@@ -59,6 +59,9 @@
     "react-transition-group": "^4.3.0",
     "scrollreveal": "^4.0.5",
     "styled-components": "^5.3.0"
+  },
+  "resolutions": {
+    "graphql": "^15.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",

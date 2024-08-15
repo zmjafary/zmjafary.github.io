@@ -1,37 +1,18 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
-</div>
-<h1 align="center">
-  brittanychiang.com - v4
-</h1>
-<p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
-<p align="center">
-  Previous iterations:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
-</p>
+## 🙏 A Special Thanks
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+I want to express my heartfelt thanks and appreciation to Brittany Chiang for her exceptional work on [brittanychiang.com](https://brittanychiang.com). Her fourth iteration of the site, built with Gatsby, served as the inspiration for my own portfolio. Brittany’s creativity, design, and attention to detail are truly inspiring.
 
-## 🚨 Forking this repo (please read!)
+Using Brittany’s work as a foundation for my own portfolio has been both an honor and a learning experience. If you’re interested in web design and development, I highly recommend checking out Brittany’s site and acknowledging her contribution to the web community.
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+**Please note:** While I have used the structure and design as inspiration, I have customized the content and styling to create a unique representation of my own work.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+## 🚨 Forking This Repo (Please Read!)
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+If you wish to use or build upon this code, please give credit where it is due. I encourage you to link back to [brittanychiang.com](https://brittanychiang.com) and acknowledge Brittany Chiang’s original work.
 
 ### TL;DR
 
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
+Feel free to use this as a reference for your own projects, but please remember to credit Brittany Chiang by linking back to [brittanychiang.com](https://brittanychiang.com). Her effort and creativity are what made this possible.
 
 ## 🛠 Installation & Set Up
 
