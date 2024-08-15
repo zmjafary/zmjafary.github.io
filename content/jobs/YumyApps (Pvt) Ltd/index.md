@@ -1,6 +1,6 @@
 ---
 title: 'Senior Laravel Developer & Team Lead'
-company: 'YumyApps (Pvt) Ltd.'
+company: 'YumyApps'
 range: 'Oct 2019 - Oct 2021'
 url: 'https://yumyapps.com/'
 order: 2
