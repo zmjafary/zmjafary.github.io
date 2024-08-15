@@ -1,6 +1,6 @@
 ---
 title: 'Senior Laravel Developer'
-company: 'SwishTag (Shopify Plus Agency)'
+company: 'SwishTag'
 range: 'Sep 2023 - Present'
 url: 'https://swishtag.com/'
 order: 5
