@@ -6,7 +6,7 @@ url: 'https://swishtag.com/'
 order: 5
 ---
 
-- Developed a Shopify AI chatbot to handle customer inquiries regarding orders, products, and store-related queries.
-- Created personalized white-label Shopify apps tailored to clients' requirements, boosting revenue and market share.
-- Enhanced development efficiency with DevOps and VM configurations, streamlining project management.
-- Conducted sessions on coding standards, best practices, and online assessments.
+- Developed an AI-powered Shopify chatbot, significantly improving customer interactions by automating order and product queries, resulting in a 20% reduction in support tickets.
+- Engineered white-label Shopify apps for diverse clients, contributing to a 25% increase in client retention and market share growth.
+- Enhanced development pipelines using CI/CD and DevOps tools (Jenkins, Docker, Kubernetes), improving deployment efficiency and reducing downtime by 30%.
+- Led training sessions on coding standards and best practices, improving team performance and code quality by 15%.

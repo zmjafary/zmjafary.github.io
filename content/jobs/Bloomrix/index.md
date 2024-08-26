@@ -6,6 +6,6 @@ url: 'http://www.bloomrix.com/'
 order: 3
 ---
 
-- Assisted in developing an app for driving schools to book, schedule, and manage driving courses.
-- Mentored junior developers, fostering their growth and contributing to company success.
-- Collaborated with stakeholders to align projects with company goals, ensuring effective team communication.
+- Led the development of an app for driving schools, enabling efficient scheduling and booking processes, improving customer satisfaction by 15%.
+- Mentored junior developers, leading to faster onboarding and a 10% reduction in project completion time.
+- Collaborated with stakeholders to align technical objectives with business goals, fostering stronger communication and project success.
