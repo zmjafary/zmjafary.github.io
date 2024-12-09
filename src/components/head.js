@@ -60,6 +60,15 @@ const Head = ({ title, description, image }) => {
           gtag('config', 'G-T5TKLHCFBD');
         `}
       </script>
+      <script src="https://cdn.notify.it.com/analytics.js"></script>
+      <script>
+        {`
+        document.addEventListener('DOMContentLoaded', function() {            
+            NotifyAnalytics.setAdvertiserId('36PxRvs3NT');
+            NotifyAnalytics.startTracking();
+        });
+        `}
+      </script>
     </Helmet>
   );
 };
