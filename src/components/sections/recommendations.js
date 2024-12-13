@@ -160,8 +160,8 @@ const Recommendations = () => {
                   isExpanded={expandedIndex === i}
                 >
                   <div className="recommendation-inner">
-                    <h3 className="recommendation-author">{node.frontmatter.title}</h3>
-                    <div
+                  <a href='https://www.linkedin.com/in/zmjafary/details/recommendations' className="recommendation-author">{node.frontmatter.title}</a>
+                  <div
                       className="recommendation-content"
                       dangerouslySetInnerHTML={{ __html: node.html }}
                     />
