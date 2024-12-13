@@ -50,9 +50,9 @@ const StyledRecommendation = styled.li`
   }
 
   .recommendation-author {
-    font-size: var(--fz-lg) !important;;
-    color: var(--lightest-slate) !important;;
-    margin-bottom: 10px !important;;
+    font-size: var(--fz-lg);
+    color: var(--lightest-slate);
+    margin-bottom: 10px;
   }
 
   .recommendation-content {
@@ -137,7 +137,7 @@ const Recommendations = () => {
           recommendations.map(({ node }, i) => (
             <StyledRecommendation key={i} isExpanded={expandedIndex === i}>
               <div className="recommendation-inner">
-                <a href='https://www.linkedin.com/in/zmjafary/details/recommendations' className="recommendation-author">{node.frontmatter.title}</a>
+                <a href='https://www.linkedin.com/in/zmjafary/details/recommendations' className="recommendation-author"> <h3> {node.frontmatter.title} </h3> </a>
                 <div
                   className="recommendation-content"
                   dangerouslySetInnerHTML={{ __html: node.html }}
@@ -160,7 +160,7 @@ const Recommendations = () => {
                   isExpanded={expandedIndex === i}
                 >
                   <div className="recommendation-inner">
-                  <a href='https://www.linkedin.com/in/zmjafary/details/recommendations' className="recommendation-author">{node.frontmatter.title}</a>
+                  <a href='https://www.linkedin.com/in/zmjafary/details/recommendations' className="recommendation-author"> <h3> {node.frontmatter.title} </h3> </a>
                   <div
                       className="recommendation-content"
                       dangerouslySetInnerHTML={{ __html: node.html }}
