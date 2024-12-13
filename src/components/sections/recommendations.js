@@ -50,9 +50,9 @@ const StyledRecommendation = styled.li`
   }
 
   .recommendation-author {
-    font-size: var(--fz-lg);
-    color: var(--lightest-slate);
-    margin-bottom: 10px;
+    font-size: var(--fz-lg) !important;;
+    color: var(--lightest-slate) !important;;
+    margin-bottom: 10px !important;;
   }
 
   .recommendation-content {
