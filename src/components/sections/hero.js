@@ -69,7 +69,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-      I'm a software engineer with over 7 years of experience in developing and designing cutting-edge web applications. I specialize in <span className="green">Laravel</span>, <span className="green">PHP</span>, <span className="green">Node.js</span>, <span className="green">React</span>, <span className="green">Vue</span>, and <span className="green">AWS</span>, delivering advanced <span className="green">E-commerce</span> and <span className="green">AI-driven solutions </span> for <span className="green">Shopify</span> and <span className="green">WordPress</span>.      </p>
+      I'm a software engineer with over 8 years of experience in developing and designing cutting-edge web applications. I specialize in <span className="green">Laravel</span>, <span className="green">PHP</span>, <span className="green">Node.js</span>, <span className="green">React</span>, <span className="green">Vue</span>, and <span className="green">AWS</span>, delivering advanced <span className="green">E-commerce</span> and <span className="green">AI-driven solutions </span> for <span className="green">Shopify</span> and <span className="green">WordPress</span>.      </p>
     </>
   );
   const five = (
