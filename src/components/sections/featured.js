@@ -64,7 +64,7 @@ const StyledProject = styled.li`
       }
 
       li {
-        margin: 0 0 5px 20px;
+        margin: 0 0 5px 30px;
 
         @media (max-width: 768px) {
           margin: 0 10px 5px 0;
