@@ -11,4 +11,4 @@ tech:
   - IntertiaJS
 ---
 
-iCashCars allows customers to quickly value their vehicles by entering VRM and car details. Sellers can submit vehicle info and photos via a user-friendly portal or WhatsApp/email connecting them with potential buyers. 
+A portal for customers to manage their vehicle's journey, including its valuation, inspection, and repair. Customers can also access their vehicle's history, review invoices, and conveniently handle payments.  
