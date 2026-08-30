@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Page not found | Zille Muhammad Jafary, Software Engineer</title>
+<link rel="canonical" href="https://zmjafary.com/404.html">
+<meta name="description" content="That page isn't here. The work is back on the home page.">
+<meta name="robots" content="noindex, follow">
+<meta name="author" content="Zille Muhammad Jafary">
+<meta name="theme-color" content="#121316">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:site_name" content="Zille Muhammad Jafary">
+<meta property="og:title" content="Page not found">
+<meta property="og:description" content="That page isn't here. The work is back on the home page.">
+<meta property="og:image" content="https://zmjafary.com/og.png">
+<meta property="og:image:alt" content="Zille Muhammad Jafary, software engineer">
+<meta property="og:url" content="https://zmjafary.com/404.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Page not found">
+<meta name="twitter:description" content="That page isn't here. The work is back on the home page.">
+<meta name="twitter:image" content="https://zmjafary.com/og.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+
+<style>
+/* This page renders a small subset of the site, so it carries only the tokens
+   and rules it actually uses. Anything changed here should be changed to match
+   in index.html. */
+:root {
+  --bg: #121316;
+  --text: #f1f2f3;
+
+  --accent: #a3e635;
+  --accent-press: #93d128;
+  --accent-text: #cbf078;
+  --accent-text-2: #dcf5a5;
+
+  --n-200: #22252a;
+  --n-300: #2e3239;
+  --n-400: #3a3f47;
+  --n-600: #969ea6;
+  --n-700: #b2b9c0;
+  --n-800: #d6dade;
+
+  --on-accent: #121316;
+
+  --font-display: 'Caprasimo', system-ui, sans-serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+
+  --radius-pill: 999px;
+
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.44);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--n-800);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+p { margin: 0; text-wrap: pretty; overflow-wrap: break-word; }
+
+a {
+  color: var(--accent-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover { color: var(--accent-text-2); }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.site-shell > #content { flex: 1; }
+
+.skip-to-content {
+  position: absolute;
+  top: auto;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 40;
+}
+
+.skip-to-content:focus,
+.skip-to-content:active {
+  top: 12px;
+  left: 12px;
+  width: auto;
+  height: auto;
+  padding: 12px 20px;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: 15px;
+  overflow: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 48px;
+}
+
+.section { position: relative; padding-block: 128px; }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 15px 28px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn--sm { padding: 11px 20px; font-size: 15px; }
+
+.btn--primary { background: var(--accent); color: var(--on-accent); }
+.btn--primary:hover,
+.btn--primary:active { background: var(--accent-press); color: var(--on-accent); }
+
+/* ---------- site header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--n-300);
+  background: color-mix(in oklch, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-block: 16px;
+}
+
+.brand { display: flex; align-items: center; gap: 12px; color: var(--text); }
+.brand:hover { color: var(--text); }
+
+.brand__mark {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding-top: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.brand__lockup { display: flex; flex-direction: column; gap: 1px; }
+
+.brand__name {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 15px;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+.brand__role {
+  color: var(--n-600);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.nav-wrap { display: flex; align-items: center; gap: 16px; }
+
+.nav { display: flex; align-items: center; gap: 30px; }
+
+.nav__link { color: var(--n-700); font-size: 14px; font-weight: 500; }
+.nav__link:hover { color: var(--text); }
+
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--n-300);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-toggle__bars { display: flex; flex-direction: column; gap: 4px; width: 18px; }
+
+.nav-toggle__bars span {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* ---------- 404 ---------- */
+.notfound__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  min-height: 60vh;
+  padding-block: 96px;
+}
+
+.notfound__code {
+  color: var(--accent);
+  font-size: clamp(72px, 18vw, 180px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.notfound__message {
+  max-width: 46ch;
+  color: var(--n-700);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* ---------- footer ---------- */
+.site-footer {
+  padding-top: 112px;
+  padding-bottom: 40px;
+  background: var(--n-200);
+}
+
+.site-footer__inner { display: flex; flex-direction: column; gap: 80px; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(0, 1fr));
+  gap: 56px;
+}
+
+.footer-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-lead__title {
+  max-width: 12ch;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.footer-lead__body {
+  max-width: 34ch;
+  color: var(--n-700);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-col { display: flex; flex-direction: column; gap: 16px; }
+
+.footer-col__title {
+  color: var(--n-600);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 12px; }
+
+.footer-links a { color: var(--n-800); font-size: 15.5px; }
+.footer-links a:hover { color: var(--accent-text-2); }
+
+.footer-baseline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--n-400);
+  color: var(--n-600);
+  font-size: 13.5px;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 1080px) {
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+}
+
+@media (max-width: 900px) {
+  .section { padding-block: 96px; }
+
+  /* The links drop into a panel under the header rather than disappearing. */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 12px 24px 24px;
+    border-bottom: 1px solid var(--n-300);
+    background: var(--bg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav.is-open { display: flex; }
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    color: var(--n-800);
+    font-size: 16px;
+  }
+
+  .nav__cta { margin-top: 12px; }
+
+  .nav-toggle { display: inline-flex; }
+}
+
+@media (max-width: 680px) {
+  .container { padding-inline: 24px; }
+  .brand__role { display: none; }
+  .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .section { padding-block: 64px; }
+  .site-footer { padding-top: 80px; }
+  .site-footer__inner { gap: 56px; }
+}
+
+@media (pointer: coarse) {
+  .brand { min-height: 44px; }
+
+  .nav__link { min-height: 44px; }
+
+  .footer-links { gap: 2px; }
+
+  .footer-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-to-content" href="#content">Skip to Content</a>
+
+<div class="site-shell">
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark" aria-hidden="true">Z</span>
+      <span class="brand__lockup">
+        <span class="brand__name">Zille Muhammad Jafary</span>
+        <span class="brand__role">Software Engineer</span>
+      </span>
+    </a>
+
+    <div class="nav-wrap">
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a class="nav__link" href="/#work">Work</a>
+        <a class="nav__link" href="/#approach">How I work</a>
+        <a class="nav__link" href="/#experience">Experience</a>
+        <a class="nav__link" href="/#about">About</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="/#contact">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" id="nav-toggle"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="content" tabindex="-1">
+<main id="top">
+  <section class="section">
+    <div class="container notfound__inner">
+      <h1 class="notfound__code">404</h1>
+      <p class="notfound__message">
+        That page isn&rsquo;t here. It either moved or never existed. Either way, the work is back
+        on the home page.
+      </p>
+      <a class="btn btn--primary" href="/">Take me home</a>
+    </div>
+  </section>
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="footer-grid">
+      <div class="footer-lead">
+        <h2 class="footer-lead__title">Zille Muhammad Jafary.</h2>
+        <p class="footer-lead__body">
+          Jerry, if that&rsquo;s easier. Software engineer, contracting full time and building
+          TourHub on the side.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__title">Site</h3>
+        <div class="footer-links">
+          <a href="/#work">Work</a>
+          <a href="/#approach">How I work</a>
+          <a href="/#experience">Experience</a>
+          <a href="/#about">About</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__title">Elsewhere</h3>
+        <div class="footer-links">
+          <a href="https://github.com/zmjafary" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/zmjafary" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/zmjafary" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/zmjafary" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__title">Direct</h3>
+        <div class="footer-links">
+          <a href="mailto:me@zmjafary.com">me@zmjafary.com</a>
+          <a href="/resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; [PDF]</a>
+          <a href="https://zmjafary.com">zmjafary.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-baseline">
+      <span>&copy; <span data-year>2026</span> Zille Muhammad Jafary</span>
+      <span>me@zmjafary.com</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var navToggle = document.getElementById('nav-toggle');
+  var nav = document.getElementById('primary-nav');
+
+  if (navToggle && nav) {
+    var setNav = function (open) {
+      navToggle.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('is-open', open);
+    };
+
+    navToggle.addEventListener('click', function () {
+      setNav(navToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { setNav(false); }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+        setNav(false);
+        navToggle.focus();
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (navToggle.getAttribute('aria-expanded') !== 'true') { return; }
+      if (!nav.contains(e.target) && !navToggle.contains(e.target)) { setNav(false); }
+    });
+
+    var wide = window.matchMedia('(min-width: 901px)');
+    var resetNav = function () { if (wide.matches) { setNav(false); } };
+    if (wide.addEventListener) { wide.addEventListener('change', resetNav); }
+    else if (wide.addListener) { wide.addListener(resetNav); }
+  }
+
+  var yearEl = document.querySelector('[data-year]');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+  /* Retire the old Gatsby service worker here too, so a returning visitor who
+     lands on a stale URL still gets cleaned up. */
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function (regs) {
+      regs.forEach(function (reg) { reg.unregister(); });
+    }).catch(function () {});
+    if (window.caches && caches.keys) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (k) { caches.delete(k); });
+      }).catch(function () {});
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

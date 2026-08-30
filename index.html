@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Zille Muhammad Jafary, Software Engineer</title>
+<link rel="canonical" href="https://zmjafary.com/">
+<meta name="description" content="Software engineer building Laravel and Vue systems since 2017. CRMs, HR and trader portals, Shopify apps and AI integrations. Contracting full time, and founder of TourHub.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Zille Muhammad Jafary">
+<meta name="theme-color" content="#121316">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:site_name" content="Zille Muhammad Jafary">
+<meta property="og:title" content="Zille Muhammad Jafary, Software Engineer">
+<meta property="og:description" content="Software engineer building Laravel and Vue systems since 2017. CRMs, HR and trader portals, Shopify apps and AI integrations. Contracting full time, and founder of TourHub.">
+<meta property="og:image" content="https://zmjafary.com/og.png">
+<meta property="og:image:alt" content="Zille Muhammad Jafary, software engineer">
+<meta property="og:url" content="https://zmjafary.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zille Muhammad Jafary, Software Engineer">
+<meta name="twitter:description" content="Software engineer building Laravel and Vue systems since 2017. CRMs, HR and trader portals, Shopify apps and AI integrations. Contracting full time, and founder of TourHub.">
+<meta name="twitter:image" content="https://zmjafary.com/og.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zille Muhammad Jafary",
+  "alternateName": "Jerry",
+  "url": "https://zmjafary.com",
+  "image": "https://zmjafary.com/og.png",
+  "email": "mailto:me@zmjafary.com",
+  "jobTitle": "Software Engineer",
+  "description": "Software engineer building Laravel and Vue systems since 2017. CRMs, HR and trader portals, Shopify apps and AI integrations. Contracting full time, and founder of TourHub.",
+  "knowsAbout": ["Laravel", "PHP", "Vue.js", "Inertia.js", "Shopify", "AWS", "DevOps", "OpenAI"],
+  "sameAs": [
+    "https://github.com/zmjafary",
+    "https://www.linkedin.com/in/zmjafary",
+    "https://www.instagram.com/zmjafary",
+    "https://www.facebook.com/zmjafary"
+  ]
+}
+</script>
+
+<style>
+/* ==========================================================================
+   Tokens
+   ========================================================================== */
+:root {
+  /* ground */
+  --bg: #121316;
+  --text: #f1f2f3;
+
+  /* accent — lime. The only saturated colour on the page. */
+  --accent: #a3e635;
+  --accent-tint-2: #2f3d13;
+  --accent-bright: #b8ef55;
+  --accent-press: #93d128;
+  --accent-text: #cbf078;
+  --accent-text-2: #dcf5a5;
+
+  /* secondary — cool slate */
+  --sec-200: #232931;
+  --sec-600: #93a86e;
+  --sec-800: #cfd6dd;
+
+  /* neutral ramp, inverted for a dark ground */
+  --n-100: #1b1d21;
+  --n-200: #22252a;
+  --n-300: #2e3239;
+  --n-400: #3a3f47;
+  --n-600: #969ea6;
+  --n-700: #b2b9c0;
+  --n-800: #d6dade;
+
+  /* band */
+  --band: #1b2027;
+  --band-ink: #e9ecef;
+
+  /* on-accent */
+  --on-accent: #121316;
+  --on-accent-hover: #1d2024;
+  --accent-ink: #a3e635;
+
+  /* type */
+  --font-display: 'Caprasimo', system-ui, sans-serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+
+  /* radii */
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+
+  /* elevation */
+  --shadow-md: 0 3px 10px rgba(0, 0, 0, 0.34);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.44);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  /* Stop iOS inflating body text when a phone is turned to landscape. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+section[id] { scroll-margin-top: 88px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--n-800);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-wrap: balance;
+  /* Last-resort guard so a long word can never widen the page on a phone. */
+  overflow-wrap: break-word;
+}
+
+p { margin: 0; text-wrap: pretty; overflow-wrap: break-word; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+img { display: block; }
+
+a {
+  color: var(--accent-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover { color: var(--accent-text-2); }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.site-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* dvh tracks the mobile browser chrome as it hides and reappears. */
+  min-height: 100dvh;
+}
+
+.site-shell > #content { flex: 1; }
+
+.skip-to-content {
+  position: absolute;
+  top: auto;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 40;
+}
+
+.skip-to-content:focus,
+.skip-to-content:active {
+  top: 12px;
+  left: 12px;
+  width: auto;
+  height: auto;
+  padding: 12px 20px;
+  background: var(--accent);
+  color: var(--on-accent);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: 15px;
+  overflow: auto;
+}
+
+/* ==========================================================================
+   Layout primitives
+   ========================================================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 48px;
+}
+
+.section {
+  position: relative;
+  padding-block: 128px;
+}
+
+.section-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.section-stack.is-tight { gap: 64px; }
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 760px;
+}
+
+.kicker {
+  color: var(--accent-text);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: clamp(36px, 4.4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.section-lede {
+  max-width: 54ch;
+  color: var(--n-700);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 999px;
+  background: var(--accent-tint-2);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.rows { display: flex; flex-direction: column; }
+
+@media (max-width: 900px) {
+  .section { padding-block: 96px; }
+}
+
+@media (max-width: 680px) {
+  .container { padding-inline: 24px; }
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 15px 28px;
+  margin: 0;
+  border: 0;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn--sm { padding: 11px 20px; font-size: 15px; }
+
+.btn--primary { background: var(--accent); color: var(--on-accent); }
+.btn--primary:hover,
+.btn--primary:active { background: var(--accent-press); color: var(--on-accent); }
+
+.btn--ghost { background: transparent; color: var(--accent); }
+.btn--ghost:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
+}
+.btn--ghost:active { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+
+.btn--inverted { background: var(--on-accent); color: var(--accent-ink); }
+.btn--inverted:hover { background: var(--on-accent-hover); color: var(--accent-ink); }
+
+/* ==========================================================================
+   Pills, chips, tags
+   ========================================================================== */
+.status-pill {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--sec-200);
+  color: var(--sec-800);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.status-dot {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-radius: var(--radius-pill);
+  background: var(--sec-600);
+}
+
+.chip-row { display: flex; flex-wrap: wrap; gap: 10px 14px; }
+
+.chip {
+  padding: 5px 13px;
+  border: 1px solid var(--n-400);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--n-800);
+  font-size: 14.5px;
+  letter-spacing: 0.02em;
+}
+
+.tag-row { display: flex; flex-wrap: wrap; gap: 8px 10px; }
+
+.tag {
+  padding: 5px 11px;
+  border-radius: var(--radius-pill);
+  background: var(--n-100);
+  color: var(--n-800);
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 22px;
+  padding: 40px 36px 42px;
+  border: 1px solid var(--n-300);
+  border-radius: var(--radius-lg);
+  background: color-mix(in oklch, var(--n-100) 55%, transparent);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover { background: var(--n-100); transform: translateY(-4px); }
+
+.card__index {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.14em;
+}
+
+.card__title {
+  font-size: 25px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.card__body {
+  color: var(--n-700);
+  font-size: 15.5px;
+  line-height: 1.55;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.bullet {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  align-items: start;
+  color: var(--n-800);
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+
+.bullet::before {
+  content: '·';
+  color: var(--sec-600);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 900px) {
+  .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .card-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ==========================================================================
+   Imagery
+   ========================================================================== */
+.frame {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   Site header
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--n-300);
+  background: color-mix(in oklch, var(--bg) 90%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-block: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text);
+}
+
+.brand:hover { color: var(--text); }
+
+.brand__mark {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding-top: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.brand__lockup { display: flex; flex-direction: column; gap: 1px; }
+
+.brand__name {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 15px;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+.brand__role {
+  color: var(--n-600);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.nav-wrap { display: flex; align-items: center; gap: 16px; }
+
+.nav { display: flex; align-items: center; gap: 30px; }
+
+.nav__link {
+  color: var(--n-700);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav__link:hover { color: var(--text); }
+
+/* Hamburger. Hidden until the links no longer fit on one line. */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--n-300);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.nav-toggle__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 18px;
+}
+
+.nav-toggle__bars span {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded='true'] .nav-toggle__bars span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+@media (max-width: 900px) {
+  /* The links drop into a panel under the header rather than disappearing. */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 12px 24px 24px;
+    border-bottom: 1px solid var(--n-300);
+    background: var(--bg);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav.is-open { display: flex; }
+
+  .nav__link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    color: var(--n-800);
+    font-size: 16px;
+  }
+
+  .nav__cta { margin-top: 12px; }
+
+  .nav-toggle { display: inline-flex; }
+}
+
+@media (max-width: 680px) {
+  .brand__role { display: none; }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.hero { overflow: hidden; }
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+
+.hero__blob {
+  top: -340px;
+  right: -280px;
+  width: 620px;
+  height: 620px;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 960px;
+}
+
+/* Two-tier heading: the name carries the h1 size, the thesis sits under it. */
+.hero__title { display: flex; flex-direction: column; gap: 16px; }
+
+.hero__name {
+  max-width: 16ch;
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.hero__tagline {
+  max-width: 20ch;
+  color: var(--n-700);
+  font-size: clamp(24px, 3.2vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.hero__tagline em { color: var(--accent); font-style: normal; }
+
+.hero__lede {
+  max-width: 52ch;
+  color: var(--n-800);
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hero__actions { display: flex; flex-wrap: wrap; gap: 12px 16px; }
+
+.stat-band {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  padding-block: 56px;
+  border-top: 1px solid var(--n-300);
+  border-bottom: 1px solid var(--n-300);
+}
+
+.stat { display: flex; flex-direction: column; gap: 8px; }
+
+.stat__num {
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 52px);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.stat__label {
+  max-width: 28ch;
+  color: var(--n-700);
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+  .hero__inner { gap: 72px; }
+}
+
+@media (max-width: 680px) {
+  .hero__blob { top: -250px; right: -200px; width: 420px; height: 420px; }
+  .stat-band { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+}
+
+/* ==========================================================================
+   Selected work
+   ========================================================================== */
+.work-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: center;
+  gap: 56px;
+  padding-block: 72px;
+  border-top: 1px solid var(--n-300);
+}
+
+.work-row__text { display: flex; flex-direction: column; gap: 20px; }
+
+.work-row__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.work-row__date {
+  color: var(--n-600);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.work-row__title {
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.work-row__body {
+  max-width: 46ch;
+  color: var(--n-700);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.metric { display: flex; align-items: baseline; gap: 14px; }
+
+.metric__num {
+  flex: none;
+  color: var(--accent-text);
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.metric__label {
+  color: var(--n-700);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.work-frame { height: 340px; }
+
+@media (max-width: 900px) {
+  .work-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding-block: 56px;
+  }
+  .work-frame { height: 280px; }
+}
+
+/* ==========================================================================
+   Recommendations
+   ========================================================================== */
+.recs { display: flex; flex-direction: column; gap: 32px; }
+
+.recs__more { display: flex; }
+
+.rec.is-hidden { display: none; }
+
+.quote {
+  color: var(--n-800);
+  font-size: 15.5px;
+  line-height: 1.6;
+}
+
+.quote.is-clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.read-more {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-text);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.read-more:hover { color: var(--accent-text-2); }
+.read-more:active { color: var(--accent-press); }
+
+@media (pointer: coarse) {
+  .read-more { min-height: 44px; }
+}
+
+.attr {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: auto;
+}
+
+.attr__name { color: var(--text); font-size: 16px; font-weight: 600; }
+.attr__role { color: var(--n-600); font-size: 13px; }
+
+/* ==========================================================================
+   How I work — the one inverted band on the page
+   ========================================================================== */
+.band {
+  overflow: hidden;
+  background: var(--band);
+  color: var(--band-ink);
+}
+
+.band__stack { position: relative; z-index: 1; }
+
+.band .kicker { color: var(--accent-bright); }
+.band .section-title { color: var(--band-ink); }
+.band .section-lede { color: color-mix(in oklch, var(--band-ink) 78%, transparent); }
+
+.band__blob { bottom: -240px; left: -180px; width: 480px; height: 480px; }
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 72px;
+}
+
+.reason {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  padding-block: 44px;
+  border-top: 1px solid color-mix(in oklch, var(--band-ink) 22%, transparent);
+}
+
+.reason__num {
+  color: var(--accent-bright);
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.reason__text { display: flex; flex-direction: column; gap: 12px; }
+
+.reason__title {
+  color: var(--band-ink);
+  font-size: 23px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.reason__body {
+  max-width: 46ch;
+  color: color-mix(in oklch, var(--band-ink) 82%, transparent);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1080px) {
+  .reasons { gap: 4px 48px; }
+}
+
+@media (max-width: 900px) {
+  .reasons { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ==========================================================================
+   Experience
+   ========================================================================== */
+.job-row {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 56px;
+  padding-block: 56px;
+  border-top: 1px solid var(--n-300);
+}
+
+.job-row__side { display: flex; flex-direction: column; gap: 8px; }
+
+.job-row__company {
+  font-size: 25px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+.job-row__range {
+  color: var(--n-600);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.job-row__main {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 64ch;
+}
+
+.job-row__title { color: var(--text); font-size: 17px; font-weight: 600; }
+
+@media (max-width: 900px) {
+  .job-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding-block: 44px;
+  }
+}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+.about__block { display: flex; flex-direction: column; gap: 80px; }
+
+.about__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  align-items: start;
+  gap: 80px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 56ch;
+}
+
+.about__text p { color: var(--n-800); }
+.about__text strong { color: var(--text); font-weight: 600; }
+
+/* The headshot is a person, not a screenshot, so it stays untouched. */
+.portrait { aspect-ratio: 1 / 1; }
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 32px;
+}
+
+.stack-group { display: flex; flex-direction: column; gap: 18px; }
+
+.stack-label {
+  color: var(--n-600);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1080px) {
+  .about__grid { grid-template-columns: minmax(0, 1fr) 320px; gap: 56px; }
+}
+
+@media (max-width: 900px) {
+  .about__block { gap: 64px; }
+  .about__grid { grid-template-columns: minmax(0, 1fr); }
+  .portrait { max-width: 360px; }
+  .stack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 680px) {
+  .stack-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ==========================================================================
+   Contact — the one accent panel, and the primary call to action
+   ========================================================================== */
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  align-items: center;
+  gap: 64px;
+  padding: 72px 64px;
+  border-radius: var(--radius-lg);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.contact-panel__copy { display: flex; flex-direction: column; gap: 20px; }
+
+.contact-panel__title {
+  max-width: 14ch;
+  color: var(--on-accent);
+  font-size: clamp(36px, 4.4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.contact-panel__body {
+  max-width: 44ch;
+  color: color-mix(in oklch, var(--on-accent) 82%, transparent);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.contact-panel__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .contact-panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    padding: 56px 40px;
+  }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  padding-top: 112px;
+  padding-bottom: 40px;
+  background: var(--n-200);
+}
+
+.site-footer__inner { display: flex; flex-direction: column; gap: 80px; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) repeat(3, minmax(0, 1fr));
+  gap: 56px;
+}
+
+.footer-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-lead__title {
+  max-width: 12ch;
+  font-size: 36px;
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+}
+
+.footer-lead__body {
+  max-width: 34ch;
+  color: var(--n-700);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.footer-col { display: flex; flex-direction: column; gap: 16px; }
+
+.footer-col__title {
+  color: var(--n-600);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 12px; }
+
+.footer-links a { color: var(--n-800); font-size: 15.5px; }
+.footer-links a:hover { color: var(--accent-text-2); }
+
+.footer-baseline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 32px;
+  padding-top: 28px;
+  border-top: 1px solid var(--n-400);
+  color: var(--n-600);
+  font-size: 13.5px;
+}
+
+@media (max-width: 1080px) {
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px; }
+}
+
+@media (max-width: 680px) {
+  .footer-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+}
+
+/* ==========================================================================
+   Phones — tightens the rhythm that was tuned for desktop, so the page
+   doesn't read as a column of very tall, very empty blocks on a handset.
+   ========================================================================== */
+@media (max-width: 680px) {
+  /* 80px top and bottom stacks into 160px of dead space between two adjacent
+     sections, which is a fifth of a phone screen. */
+  .section { padding-block: 64px; }
+
+  .section-stack { gap: 56px; }
+  .section-stack.is-tight { gap: 48px; }
+
+  .section-head { gap: 14px; }
+
+  .hero__inner { gap: 56px; }
+  .stat-band { padding-block: 40px; }
+
+  .card { padding: 32px 26px 34px; gap: 18px; }
+
+  .work-row { gap: 28px; padding-block: 48px; }
+  .work-frame { height: 220px; }
+  .work-row__title { font-size: 28px; }
+
+  .reason { grid-template-columns: 48px minmax(0, 1fr); padding-block: 34px; }
+  .reason__num { font-size: 30px; }
+
+  .job-row { padding-block: 36px; }
+
+  .about__block { gap: 48px; }
+
+  .contact-panel { padding: 44px 26px; gap: 32px; }
+
+  .site-footer { padding-top: 80px; }
+  .site-footer__inner { gap: 56px; }
+}
+
+/* Once the two hero buttons can no longer share a row they stack, and stacked
+   buttons of different widths look like a mistake. Make them one column. */
+@media (max-width: 480px) {
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { width: 100%; }
+}
+
+/* Caprasimo is a wide face, so the h1 needs a lower floor on narrow handsets
+   than the clamp's 48px minimum gives it. */
+@media (max-width: 420px) {
+  .hero__name { font-size: 40px; }
+  .hero__lede { font-size: 18px; }
+}
+
+/* Touch targets. Text links sized for a mouse are too small for a thumb.
+   This also catches the iPad in landscape, which is wide enough for the
+   desktop nav row but is still driven by a finger. */
+@media (pointer: coarse) {
+  .brand { min-height: 44px; }
+
+  .nav__link { min-height: 44px; }
+
+  .footer-links { gap: 2px; }
+
+  .footer-links a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+/* ==========================================================================
+   Motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .card:hover { transform: none; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-to-content" href="#content">Skip to Content</a>
+
+<div class="site-shell">
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">Z</span>
+      <span class="brand__lockup">
+        <span class="brand__name">Zille Muhammad Jafary</span>
+        <span class="brand__role">Software Engineer</span>
+      </span>
+    </a>
+
+    <div class="nav-wrap">
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a class="nav__link" href="#work">Work</a>
+        <a class="nav__link" href="#approach">How I work</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contact">Get in touch</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" id="nav-toggle"
+              aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="content" tabindex="-1">
+<main id="top">
+
+  <!-- ====================================================================
+       Hero
+       ==================================================================== -->
+  <section class="section hero">
+    <div class="blob hero__blob" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="status-pill">
+          <span class="status-dot" aria-hidden="true"></span>
+          Contracting full time
+        </span>
+
+        <h1 class="hero__title">
+          <span class="hero__name">Zille Muhammad Jafary.</span>
+          <span class="hero__tagline">but if that&rsquo;s a mouthful, just go with <em>Jerry</em>.</span>
+        </h1>
+
+        <p class="hero__lede">
+          Most of what I build sits behind a login. CRMs, HR systems, trader dashboards, the tools
+          people have open all day. I&rsquo;ve been at it since 2017, mostly Laravel and Vue. Since
+          November 2024 I&rsquo;ve been contracting full time and putting the rest of my hours into
+          TourHub, which is mine and the one thing here that&rsquo;s fully public. Think Skyscanner,
+          but for tours.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="/resume.pdf" target="_blank" rel="noopener">Read my r&eacute;sum&eacute;</a>
+          <a class="btn btn--ghost" href="mailto:me@zmjafary.com">me@zmjafary.com</a>
+        </div>
+      </div>
+
+      <div class="stat-band">
+        <div class="stat">
+          <span class="stat__num" data-years-since="2017-01-17">9+</span>
+          <span class="stat__label" data-years-label>Years in, since 17 January 2017</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">25+</span>
+          <span class="stat__label">Projects delivered, some from scratch</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">10+</span>
+          <span class="stat__label">Clients, going back to 2017</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">4,000</span>
+          <span class="stat__label">Tours on TourHub, from 200 operators</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       What I do
+       ==================================================================== -->
+  <section class="section" id="services">
+    <div class="container section-stack">
+      <div class="section-head">
+        <span class="kicker">What I do</span>
+        <h2 class="section-title">Three things, mostly.</h2>
+        <p class="section-lede">
+          Most of my work is internal software, the kind staff live in all day. Nobody cares
+          about a nice animation when they&rsquo;re trying to close a rota before they go home.
+          The rest is public-facing: storefronts, marketplaces, and the SEO that gets people
+          to them.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="card__index">01</span>
+          <h3 class="card__title">Backend systems</h3>
+          <p class="card__body">Laravel and PHP. This is where most of my time goes.</p>
+          <ul class="bullets">
+            <li class="bullet"><span>Portals with roles and permissions, for CRM, HR, customers and traders</span></li>
+            <li class="bullet"><span>APIs, queued jobs, and live updates that go out by email and WhatsApp</span></li>
+            <li class="bullet"><span>Stripe payments, OAuth, and whatever third party the client is already tied to</span></li>
+            <li class="bullet"><span>Security and performance fixes on systems that are already live</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card__index">02</span>
+          <h3 class="card__title">Front-end work</h3>
+          <p class="card__body">Vue 3 with Inertia, and React when a project calls for it.</p>
+          <ul class="bullets">
+            <li class="bullet"><span>Inertia apps, so there&rsquo;s no second API to keep in sync</span></li>
+            <li class="bullet"><span>Tables, filters and rotas that people actually work in all day</span></li>
+            <li class="bullet"><span>Components the next developer can pick up without ringing me</span></li>
+            <li class="bullet"><span>Interfaces that still work properly on a phone</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="card__index">03</span>
+          <h3 class="card__title">Shopify and AI</h3>
+          <p class="card__body">Shopify apps, WordPress sites, and OpenAI on top of them.</p>
+          <ul class="bullets">
+            <li class="bullet"><span>White-label Shopify apps for different clients</span></li>
+            <li class="bullet"><span>Chatbots that handle the order and product questions nobody wants to answer</span></li>
+            <li class="bullet"><span>Multilingual storefronts and more than one way to pay</span></li>
+            <li class="bullet"><span>SEO and conversion work</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Selected work
+       ==================================================================== -->
+  <section class="section" id="work">
+    <div class="container section-stack is-tight">
+      <div class="section-head">
+        <span class="kicker">Selected work</span>
+        <h2 class="section-title">Some of what I&rsquo;ve built.</h2>
+        <p class="section-lede">
+          Eight I can show. Most of the rest sit behind an NDA, or a login I no longer have. All of
+          them shipped, and were in production the last time I had eyes on them.
+        </p>
+      </div>
+
+      <div class="rows">
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">Marketplace</span>
+              <span class="work-row__date">Mine &middot; 2024&ndash;Present</span>
+            </div>
+            <h3 class="work-row__title">TourHub</h3>
+            <p class="work-row__body">
+              Pakistan&rsquo;s tours in one place, so you can actually compare them. A crawler reads
+              operator websites, an LLM turns each tour page into a structured tour, and it only
+              publishes itself once it clears every quality gate. Anything the model isn&rsquo;t
+              sure about waits for me in a review queue. Roughly 4,000 tours from 200 operators so far.
+            </p>
+            <div class="metric">
+              <span class="metric__num">10K</span>
+              <span class="metric__label">Unique page views so far</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Laravel</span><span class="tag">Vue 3</span><span class="tag">Inertia.js</span><span class="tag">Filament</span><span class="tag">Meilisearch</span><span class="tag">OpenAI</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/tourhub.jpg" alt="The TourHub homepage, showing tour search and popular destinations" loading="lazy" width="1400" height="780">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">E-commerce</span>
+              <span class="work-row__date">SwishTag &middot; 2023&ndash;2024</span>
+            </div>
+            <h3 class="work-row__title">SwishTag</h3>
+            <p class="work-row__body">
+              A promotional products platform built on Shopify. Decorators and suppliers run
+              production, orders, punchout catalogues and print on demand through it. I built the AI
+              chatbot that answers order and product questions, and the white-label Shopify apps for
+              their clients.
+            </p>
+            <div class="metric">
+              <span class="metric__num">&minus;20%</span>
+              <span class="metric__label">On support tickets, once the chatbot was in</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">Shopify</span><span class="tag">OpenAI</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/swishtag.jpg" alt="The SwishTag promotional products platform" loading="lazy" width="1400" height="780">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">Marketplace</span>
+              <span class="work-row__date">iCashCars &middot; 2021&ndash;2023</span>
+            </div>
+            <h3 class="work-row__title">iCashCars</h3>
+            <p class="work-row__body">
+              You put in your registration and a few details about the car, and it comes back with a
+              valuation. Then you send photos and paperwork through the portal, or over WhatsApp or
+              email if you&rsquo;d rather, and it gets you in front of buyers.
+            </p>
+            <div class="metric">
+              <span class="metric__num">+20%</span>
+              <span class="metric__label">On conversions, after the SEO and site work</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">AWS</span><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">Vue 3</span><span class="tag">Inertia.js</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/icashcars.png" alt="The iCashCars vehicle valuation site" loading="lazy" width="1075" height="635">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">Portal</span>
+              <span class="work-row__date">iCashCars &middot; 2021&ndash;2023</span>
+            </div>
+            <h3 class="work-row__title">Traders Dashboard</h3>
+            <p class="work-row__body">
+              Where traders manage their vehicles, bids and purchases, and dig back through what
+              they&rsquo;ve bought before. New stock and updates on anything they&rsquo;re watching
+              go out by email and WhatsApp, so they don&rsquo;t have to sit refreshing the page.
+            </p>
+            <div class="metric">
+              <span class="metric__num">+40%</span>
+              <span class="metric__label">On operational efficiency at iCashCars</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">AWS</span><span class="tag">Laravel</span><span class="tag">Vue 3</span><span class="tag">Inertia.js</span><span class="tag">Algolia</span><span class="tag">WhatsApp API</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/traders.png" alt="The Traders Dashboard vehicle listing screen" loading="lazy" width="1075" height="635">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">Internal tool</span>
+              <span class="work-row__date">iCashCars &middot; 2021&ndash;2023</span>
+            </div>
+            <h3 class="work-row__title">HR &amp; Drivers Portal</h3>
+            <p class="work-row__body">
+              This one I built from nothing. Attendance, breaks, holidays, shift rotas, a company
+              wiki, notifications that go to everyone. Profiles and feedback too, and the driver
+              side of it as well. It&rsquo;s not the kind of thing anyone puts in a portfolio, but
+              HR used it every single day.
+            </p>
+            <div class="metric">
+              <span class="metric__num">&minus;25%</span>
+              <span class="metric__label">On the manual work in HR and driver management</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">AWS</span><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">Vue 3</span><span class="tag">Inertia.js</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/hr-portal.png" alt="The HR and Drivers Portal employee management screen" loading="lazy" width="1075" height="635">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">Internal tool</span>
+              <span class="work-row__date">iCashCars &middot; 2021&ndash;2023</span>
+            </div>
+            <h3 class="work-row__title">Status Report</h3>
+            <p class="work-row__body">
+              It watches every auxiliary and third-party service the business depends on, and logs
+              the lot. Support should find out something&rsquo;s down from the dashboard, not from a
+              customer ringing in to tell them.
+            </p>
+            <div class="metric">
+              <span class="metric__num">&minus;35%</span>
+              <span class="metric__label">On downtime, once the automated side was in</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">AWS</span><span class="tag">Laravel</span><span class="tag">Vue 3</span><span class="tag">WhatsApp API</span><span class="tag">Dial9</span><span class="tag">Zapier</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/status-report.png" alt="The Status Report service monitoring dashboard" loading="lazy" width="1075" height="635">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">Consumer app</span>
+              <span class="work-row__date">YumyApps &middot; 2019&ndash;2021</span>
+            </div>
+            <h3 class="work-row__title">FamilyTime</h3>
+            <p class="work-row__body">
+              A parental control app. Location, internet use, phone logs, app blocking, geo-fencing,
+              all of it feeding live back to the parent app. I ran the full revamp, which meant the
+              interface and the security both got pulled apart and rebuilt.
+            </p>
+            <div class="metric">
+              <span class="metric__num">+35%</span>
+              <span class="metric__label">On user engagement after the revamp</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Laravel</span><span class="tag">Lumen</span><span class="tag">PHP</span><span class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/familytime.png" alt="The FamilyTime parental control app" loading="lazy" width="1075" height="635">
+          </div>
+        </article>
+
+        <article class="work-row">
+          <div class="work-row__text">
+            <div class="work-row__meta">
+              <span class="tag">E-commerce</span>
+              <span class="work-row__date">YumyApps &middot; 2019&ndash;2021</span>
+            </div>
+            <h3 class="work-row__title">BakerTown</h3>
+            <p class="work-row__body">
+              A marketplace for bakers. They handle their products, orders and deliveries in a
+              seller app and an admin panel, and buyers browse and order from a separate mobile app.
+              Three apps, one Laravel backend underneath the lot.
+            </p>
+            <div class="metric">
+              <span class="metric__num">3</span>
+              <span class="metric__label">Apps running off the same backend</span>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">Stripe</span><span class="tag">Firebase</span><span class="tag">APNs</span><span class="tag">OAuth</span>
+            </div>
+          </div>
+          <div class="frame work-frame">
+            <img src="/assets/img/work/bakertown.png" alt="The BakerTown e-commerce storefront" loading="lazy" width="1075" height="635">
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Recommendations — verbatim from LinkedIn. Titles, relationships and
+       dates come from the recommendation itself, so nothing here is inferred.
+       ==================================================================== -->
+  <section class="section" id="recommendations">
+    <div class="container section-stack">
+      <div class="section-head">
+        <span class="kicker">Recommendations</span>
+        <h2 class="section-title">People I&rsquo;ve worked with, in their words.</h2>
+      </div>
+
+      <div class="recs">
+        <div class="card-grid" id="recs-grid">
+
+          <article class="card rec">
+            <p class="quote is-clamped">&ldquo;I had the privilege of learning Laravel, React, and Shopify app development under the mentorship of ZMJ, and I can confidently say that he is one of the most brilliant and generous individuals I&rsquo;ve had the pleasure to work with. His depth of knowledge in these technologies is impressive, but what truly sets him apart is his ability to teach and inspire. ZMJ has a rare talent for breaking down complex concepts into digestible pieces, making the learning process not only easier but enjoyable. His patience, guidance, and hands-on approach significantly shortened my learning curve, and I wouldn&rsquo;t be where I am today without his support. If you&rsquo;re looking for someone who is not only an expert in problem solving, coding skill but also a kind and encouraging mentor, ZMJ is your person. I highly recommend him to anyone seeking to grow both professionally and personally.&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Haseeb Ahmed Khan</span>
+              <span class="attr__role">Senior Software Engineer &middot; Reported to Zille, Oct 2024</span>
+            </div>
+          </article>
+
+          <article class="card rec">
+            <p class="quote is-clamped">&ldquo;I&rsquo;m incredibly impressed by Zille Muhammad&rsquo;s professionalism, dependability and expertise. His unapologetic confidence and competence in his field make him stand out. He approached the project with a level of expertise that inspired trust and confidence in his abilities from the moment we started working together. Zille consistently showed that he was dedicated to producing excellent results. He paid close attention to my requests, was proactive in seeking clarifications and always made sure he understood the requirements clearly. I would, without a doubt, recommend Zille to anyone looking for a skilled and reliable expert for any projects involving Laravel PHP, JavaScript or web development in general.&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Bilal Ahmad</span>
+              <span class="attr__role">Marketing &middot; Zille&rsquo;s client, Jul 2023</span>
+            </div>
+          </article>
+
+          <article class="card rec">
+            <p class="quote is-clamped">&ldquo;I have worked with him for over 1 year and I can confidently say that he is one of the intellects that Pakistan has created and should cash in every way and form! Zille Muhammad has a hands-on grip on technical knowledge and he has assisted me whenever and however I needed help. I still reach out to Zille Muhammad whenever I am STUCK with technical stuff. This is an appreciation post for you Sir! If you all, need a man who has 360-degree knowledge of development, Zille Muhammad is your guy!&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Sameed Awais</span>
+              <span class="attr__role">AI Engineer &middot; Reported to Zille, Jul 2023</span>
+            </div>
+          </article>
+
+          <article class="card rec is-hidden">
+            <p class="quote is-clamped">&ldquo;Zille Muhammad Jafary was not just a Team Lead to me at YumyApps (Pvt) Ltd. but also a great Mentor who played an important role in my growth as a developer and as a professional. His problem-solving approach and focus on writing optimized code was always outstanding. His ability to explain complex topics in a clear and concise manner was exceptional. He&rsquo;s a Master Debugger for me. I always admired his passion and dedication to his work which also holds a deep impact on me as well. He&rsquo;s truly a team player; despite his workload, he demonstrated his true dedication to helping other developers. It&rsquo;ll be a great gain for any company who has this Gem in their team.&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Malik Muhammad Zeeshan</span>
+              <span class="attr__role">Senior Software Engineer &middot; Reported to Zille, Jul 2023</span>
+            </div>
+          </article>
+
+          <article class="card rec is-hidden">
+            <p class="quote is-clamped">&ldquo;Zille Muhammad is a highly skilled Laravel developer whom I have had the pleasure of working with closely at Yumyapps pvt ltd. I would like to express my utmost confidence in his abilities and I wholeheartedly recommend him as a Laravel developer. Their technical expertise, dedication, and collaborative nature make them a valuable asset to any development team.&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Tayyeb Hassan</span>
+              <span class="attr__role">Senior Software Engineer &middot; Same team at YumyApps, Jul 2023</span>
+            </div>
+          </article>
+
+          <article class="card rec is-hidden">
+            <p class="quote is-clamped">&ldquo;Zille Muhammad is my university batchmate but was a senior of mine at YumyApps maybe because he started working early but by the time I got there he was a senior and was the one who recommended me there. Although we worked in different department, professionally he was a delight. Everyone was a fan, including me and lastly this was the only time standups were fun, never before, never after, thank you for that and best of luck to you!&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Shumail Jaffar</span>
+              <span class="attr__role">Lead QA Engineer &middot; Zille was his senior, Jul 2023</span>
+            </div>
+          </article>
+
+          <article class="card rec is-hidden">
+            <p class="quote">&ldquo;He was a quick learner and fit in real quick in the company. And until this day, I haven&rsquo;t met anyone who goes out of his way to protect his teammates and does more than he&rsquo;s asked to do. Hats off to you boy.&rdquo;</p>
+            <div class="attr">
+              <span class="attr__name">Shahid Mehmood</span>
+              <span class="attr__role">Senior DevOps Engineer &middot; Was senior to Zille, Jul 2023</span>
+            </div>
+          </article>
+
+          <article class="card rec is-hidden">
+            <p class="quote is-clamped">&ldquo;It is my pleasure to wholeheartedly recommend Zille for his exceptional professionalism and unwavering dedication. Throughout his time during Degree program, Zille consistently demonstrated a level of commitment to his study that truly sets him apart. His approach to Assignments/Projects was consistently thorough and focused, and he exhibited a high degree of responsibilities. It is with pleasure that I recommend Zille for any opportunity that comes his way.&rdquo;</p>
+            <button class="read-more" type="button" aria-expanded="false">Read more</button>
+            <div class="attr">
+              <span class="attr__name">Ilyas Butt</span>
+              <span class="attr__role">Systems Ltd &middot; Taught Zille at university, Aug 2023</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="recs__more">
+          <button class="btn btn--ghost" type="button" id="recs-toggle" aria-expanded="false" aria-controls="recs-grid">Show 5 more</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       How I work
+       ==================================================================== -->
+  <section class="section band" id="approach">
+    <div class="blob band__blob" aria-hidden="true"></div>
+    <div class="container section-stack band__stack">
+      <div class="section-head">
+        <span class="kicker">How I work</span>
+        <h2 class="section-title">Four things I stick to.</h2>
+        <p class="section-lede">
+          These didn&rsquo;t come from a book. They came from leading teams and then having to live
+          with what I shipped afterwards.
+        </p>
+      </div>
+
+      <div class="reasons">
+        <div class="reason">
+          <span class="reason__num">01</span>
+          <div class="reason__text">
+            <h3 class="reason__title">I build for whoever has it open all day</h3>
+            <p class="reason__body">
+              An inspector standing in a yard, an admin closing a rota, an operator trying to list a
+              tour. They&rsquo;re the ones I picture. When one operator couldn&rsquo;t get through
+              the listing form on TourHub, I pointed the crawler at their own website and imported
+              the lot for them. For one operator. Worth it.
+            </p>
+          </div>
+        </div>
+
+        <div class="reason">
+          <span class="reason__num">02</span>
+          <div class="reason__text">
+            <h3 class="reason__title">I don&rsquo;t skip the boring parts</h3>
+            <p class="reason__body">
+              Roles and permissions, audit trails, queues, invoices, payment states. None of
+              it&rsquo;s fun and none of it demos well. But it&rsquo;s what decides whether anyone
+              still trusts the thing in year three.
+            </p>
+          </div>
+        </div>
+
+        <div class="reason">
+          <span class="reason__num">03</span>
+          <div class="reason__text">
+            <h3 class="reason__title">I fix how things get shipped</h3>
+            <p class="reason__body">
+              Setting up CI/CD with Jenkins, Docker and Kubernetes at SwishTag took downtime down by
+              30%. I&rsquo;d rather spend a week on the pipeline than keep losing hours to deploys
+              that go sideways.
+            </p>
+          </div>
+        </div>
+
+        <div class="reason">
+          <span class="reason__num">04</span>
+          <div class="reason__text">
+            <h3 class="reason__title">I make sure I&rsquo;m not the only one who knows</h3>
+            <p class="reason__body">
+              I&rsquo;ve mentored juniors at YumyApps, Bloomrix, iCashCars and SwishTag. Onboarding
+              got quicker and code quality went up 15%. Being the only person who understands a
+              system just leaves a problem for whoever comes after you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Experience
+       ==================================================================== -->
+  <section class="section" id="experience">
+    <div class="container section-stack is-tight">
+      <div class="section-head">
+        <span class="kicker">Experience</span>
+        <h2 class="section-title">Where I&rsquo;ve worked.</h2>
+      </div>
+
+      <div class="rows">
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">Contract work</h3>
+            <span class="job-row__range">Nov 2024&ndash;Present</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Software Engineer</span>
+            <ul class="bullets">
+              <li class="bullet"><span>It&rsquo;s as much consultancy as it is building. Development planning, execution, code reviews, and AI integrations.</span></li>
+              <li class="bullet"><span>Day to day that&rsquo;s an Ionic app on a Laravel backend. Writing the APIs, improving their search, and getting the speed up.</span></li>
+              <li class="bullet"><span>DevOps and Docker management, and building out the pipelines.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">TourHub</h3>
+            <span class="job-row__range">Nov 2024&ndash;Present</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Founder &amp; Owner</span>
+            <ul class="bullets">
+              <li class="bullet"><span>TourHub puts Pakistan&rsquo;s tours in one place. Roughly 4,000 tours from 200 operators, with dates and real prices in Rupees side by side.</span></li>
+              <li class="bullet"><span>I built all of it. The crawl and extraction pipeline that writes the catalogue, an operator workspace for claiming companies and handling leads, a Filament admin for the review queue, and Meilisearch across the lot.</span></li>
+              <li class="bullet"><span>Just crossed 10,000 unique page views. It&rsquo;s a one-man show, running alongside the contract work.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">SwishTag</h3>
+            <span class="job-row__range">Sep 2023&ndash;Nov 2024</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Senior Laravel Developer</span>
+            <ul class="bullets">
+              <li class="bullet"><span>Built an AI Shopify chatbot that answers order and product questions. Support tickets dropped by 20%.</span></li>
+              <li class="bullet"><span>Built white-label Shopify apps for a range of clients, and client retention went up 25%.</span></li>
+              <li class="bullet"><span>Set up CI/CD with Jenkins, Docker and Kubernetes, which cut downtime by 30%.</span></li>
+              <li class="bullet"><span>Led delivery across teams and mentored the juniors. Code quality went up 15%.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">iCashCars</h3>
+            <span class="job-row__range">Dec 2021&ndash;Sep 2023</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Full Stack Developer</span>
+            <ul class="bullets">
+              <li class="bullet"><span>Led the CRM trader portal and the customer portal. Operations came out 40% more efficient.</span></li>
+              <li class="bullet"><span>Built the HR and Drivers Portal from scratch, which took 25% off the manual work.</span></li>
+              <li class="bullet"><span>Sorted out the SEO and how the site ran, and conversions went up 20%.</span></li>
+              <li class="bullet"><span>Automated a lot of the operational side and got downtime down by 35%.</span></li>
+              <li class="bullet"><span>Mentored the junior developers on the portal team.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">Bloomrix</h3>
+            <span class="job-row__range">Oct 2021&ndash;Dec 2021</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Technical Team Lead</span>
+            <ul class="bullets">
+              <li class="bullet"><span>Led the build of a driving school app for scheduling and booking. Customer satisfaction went up 15%.</span></li>
+              <li class="bullet"><span>Mentored the junior developers, which took 10% off onboarding and project time.</span></li>
+              <li class="bullet"><span>Worked with stakeholders to keep the technical plan lined up with what the business actually needed.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">YumyApps</h3>
+            <span class="job-row__range">Oct 2019&ndash;Oct 2021</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Senior Laravel Developer &amp; Team Lead</span>
+            <ul class="bullets">
+              <li class="bullet"><span>Ran the full revamp of a parental control app. User engagement went up 35%.</span></li>
+              <li class="bullet"><span>Added more payment methods and multilingual support, which widened the market by 20%.</span></li>
+              <li class="bullet"><span>Worked on sales strategy, security, and keeping the product consistent.</span></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job-row">
+          <div class="job-row__side">
+            <h3 class="job-row__company">Freelance work</h3>
+            <span class="job-row__range">Jan 2017&ndash;Oct 2019</span>
+          </div>
+          <div class="job-row__main">
+            <span class="job-row__title">Web Developer, part time</span>
+            <ul class="bullets">
+              <li class="bullet"><span>Internships, part-time jobs, and freelance work on Fiverr and Upwork, all while I was finishing my degree. Graduated in 2019.</span></li>
+              <li class="bullet"><span>Worked with startups at Plan9, the PITB incubator, on technical support and mentoring.</span></li>
+              <li class="bullet"><span>Laravel, React and Vue mostly. This is the stretch where I learned to actually finish things.</span></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       About
+       ==================================================================== -->
+  <section class="section" id="about">
+    <div class="container about__block">
+      <div class="section-head">
+        <span class="kicker">About</span>
+        <h2 class="section-title">How I got here.</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p>
+            I started as a web development intern on 17 January 2017, still at university, with no
+            real plan beyond wanting to be paid to write code. Graduated in the summer of 2019.
+          </p>
+          <p>
+            Through university I freelanced, took internships, and worked part time with startups at
+            <strong>Plan9</strong>, the PITB incubator. First proper job was <strong>YumyApps</strong>.
+            I went in as a Laravel developer and came out as Team Lead, and most of those two
+            years went into revamping a parental control app and building product management tools.
+          </p>
+          <p>
+            After that a short stint at <strong>Bloomrix</strong> leading the team on a driving
+            school app, then <strong>iCashCars</strong> for nearly two years, full stack, across
+            their CRM, CMS, HRM and customer portals. Then <strong>SwishTag</strong> until November
+            2024, doing Shopify apps and an OpenAI chatbot.
+          </p>
+          <p>
+            My first daughter was born around then too. I wanted to find something remote so I could
+            be there for her and help take care of my wife, so I left and went freelance. It ended
+            up working out great.
+          </p>
+          <p>
+            I&rsquo;ve been contracting full time since, and everything left over goes into
+            <strong>TourHub</strong>. Tour prices here were scattered across a couple of hundred
+            operator sites with no way to compare like for like, so I put them all in one place.
+            Roughly 4,000 tours, updated daily. Still just me on it.
+          </p>
+        </div>
+
+        <div class="frame portrait">
+          <img src="/assets/img/me.png" alt="Zille Muhammad Jafary" width="500" height="500" loading="lazy">
+        </div>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-group">
+          <span class="stack-label">Languages &amp; frameworks</span>
+          <div class="chip-row">
+            <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">Lumen</span><span class="chip">Filament</span><span class="chip">Node.js</span><span class="chip">JavaScript (ES6+)</span><span class="chip">TypeScript</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <span class="stack-label">Front-end &amp; platforms</span>
+          <div class="chip-row">
+            <span class="chip">Vue 3</span><span class="chip">Inertia.js</span><span class="chip">React</span><span class="chip">Ionic</span><span class="chip">Shopify</span><span class="chip">WordPress</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <span class="stack-label">Cloud, data &amp; tooling</span>
+          <div class="chip-row">
+            <span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">Jenkins</span><span class="chip">Meilisearch</span><span class="chip">Algolia</span><span class="chip">MySQL</span><span class="chip">Redis</span><span class="chip">Firebase</span><span class="chip">Stripe</span><span class="chip">OpenAI</span><span class="chip">WhatsApp API</span><span class="chip">Zapier</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Contact
+       ==================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-panel">
+        <div class="contact-panel__copy">
+          <h2 class="contact-panel__title">Got something that needs building?</h2>
+          <p class="contact-panel__body">
+            Tell me what it is and roughly when you need it. If I&rsquo;m not the right person for
+            it I&rsquo;ll say so, and usually know someone who is.
+          </p>
+        </div>
+        <div class="contact-panel__actions">
+          <a class="btn btn--inverted" href="mailto:me@zmjafary.com">me@zmjafary.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="footer-grid">
+      <div class="footer-lead">
+        <h2 class="footer-lead__title">Zille Muhammad Jafary.</h2>
+        <p class="footer-lead__body">
+          Jerry, if that&rsquo;s easier. Software engineer, contracting full time and building
+          TourHub on the side.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__title">Site</h3>
+        <div class="footer-links">
+          <a href="#work">Work</a>
+          <a href="#approach">How I work</a>
+          <a href="#experience">Experience</a>
+          <a href="#about">About</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__title">Elsewhere</h3>
+        <div class="footer-links">
+          <a href="https://github.com/zmjafary" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/zmjafary" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/zmjafary" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/zmjafary" target="_blank" rel="noreferrer">Facebook</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 class="footer-col__title">Direct</h3>
+        <div class="footer-links">
+          <a href="mailto:me@zmjafary.com">me@zmjafary.com</a>
+          <a href="/resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute; [PDF]</a>
+          <a href="https://zmjafary.com">zmjafary.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-baseline">
+      <span>&copy; <span data-year>2026</span> Zille Muhammad Jafary</span>
+      <span>me@zmjafary.com</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ------------------------------------------------------------------
+     Mobile menu.
+     ------------------------------------------------------------------ */
+  var navToggle = document.getElementById('nav-toggle');
+  var nav = document.getElementById('primary-nav');
+
+  if (navToggle && nav) {
+    var setNav = function (open) {
+      navToggle.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('is-open', open);
+    };
+
+    navToggle.addEventListener('click', function () {
+      setNav(navToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    // Following a link should close the panel behind you.
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { setNav(false); }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+        setNav(false);
+        navToggle.focus();
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      if (navToggle.getAttribute('aria-expanded') !== 'true') { return; }
+      if (!nav.contains(e.target) && !navToggle.contains(e.target)) { setNav(false); }
+    });
+
+    // Rotating to a wide viewport must not leave the panel stuck open.
+    var wide = window.matchMedia('(min-width: 901px)');
+    var resetNav = function () { if (wide.matches) { setNav(false); } };
+    if (wide.addEventListener) { wide.addEventListener('change', resetNav); }
+    else if (wide.addListener) { wide.addListener(resetNav); }
+  }
+
+  /* ------------------------------------------------------------------
+     Years in the trade, derived so it doesn't silently expire each January.
+     ------------------------------------------------------------------ */
+  // Indexed by the number itself, so nothing here is tied to a particular
+  // start year the way an offset into the array would be.
+  var WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight',
+               'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+               'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'];
+
+  var numEl = document.querySelector('[data-years-since]');
+  var labelEl = document.querySelector('[data-years-label]');
+
+  if (numEl && labelEl) {
+    var parts = numEl.getAttribute('data-years-since').split('-');
+    var startY = +parts[0], startM = +parts[1], startD = +parts[2];
+    var now = new Date();
+    var years = now.getFullYear() - startY;
+    // Not yet past the anniversary this year? Then one fewer full year has passed.
+    if (now.getMonth() + 1 < startM || (now.getMonth() + 1 === startM && now.getDate() < startD)) {
+      years -= 1;
+    }
+    // Past twenty the words run out. Fall back to the numeral rather than leave
+    // the markup's evergreen label sitting next to a count it no longer matches.
+    var next = WORDS[years + 1] || String(years + 1);
+    numEl.textContent = years + '+';
+    labelEl.textContent = 'Years in, and ' + next + ' on ' + startD + ' ' + MONTHS[startM - 1];
+  }
+
+  /* ------------------------------------------------------------------
+     Footer year.
+     ------------------------------------------------------------------ */
+  var yearEl = document.querySelector('[data-year]');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
+
+  /* ------------------------------------------------------------------
+     Recommendations: per-card read more, plus the show-all toggle.
+     ------------------------------------------------------------------ */
+  document.querySelectorAll('.rec .read-more').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var quote = btn.parentNode.querySelector('.quote');
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      btn.textContent = open ? 'Read more' : 'Read less';
+      quote.classList.toggle('is-clamped', open);
+    });
+  });
+
+  var toggle = document.getElementById('recs-toggle');
+  if (toggle) {
+    var hidden = document.querySelectorAll('.rec.is-hidden');
+    var count = hidden.length;
+    // Cache the nodes now, since the class they're matched on is what we toggle.
+    var extra = Array.prototype.slice.call(hidden);
+
+    toggle.textContent = 'Show ' + count + ' more';
+    toggle.addEventListener('click', function () {
+      var open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      toggle.textContent = open ? 'Show ' + count + ' more' : 'Show less';
+      extra.forEach(function (card) { card.classList.toggle('is-hidden', open); });
+    });
+  }
+
+  /* ------------------------------------------------------------------
+     Retire the old Gatsby service worker, so returning visitors aren't
+     served the previous build out of cache forever.
+     ------------------------------------------------------------------ */
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function (regs) {
+      regs.forEach(function (reg) { reg.unregister(); });
+    }).catch(function () {});
+    if (window.caches && caches.keys) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (k) { caches.delete(k); });
+      }).catch(function () {});
+    }
+  }
+})();
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T5TKLHCFBD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T5TKLHCFBD');
+</script>
+
+</body>
+</html>
