@@ -40,11 +40,28 @@ const Copy = styled.div`
   max-width: 960px;
 `;
 
+/* Two-tier heading: the name carries the h1 size, the thesis sits under it. */
 const Title = styled.h1`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+const Name = styled.span`
   max-width: 16ch;
   font-size: clamp(48px, 7vw, 92px);
   line-height: 0.98;
   letter-spacing: -0.03em;
+  text-wrap: balance;
+`;
+
+const Tagline = styled.span`
+  max-width: 20ch;
+  color: var(--n-700);
+  font-size: clamp(24px, 3.2vw, 34px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
 
   em {
     color: var(--accent);
@@ -112,15 +129,18 @@ const Hero = () => (
         </StatusPill>
 
         <Title>
-          Most of what I build sits behind a <em>login</em>.
+          <Name>Zille Muhammad Jafary.</Name>
+          <Tagline>
+            Most of what I build sits <em>behind a login</em>.
+          </Tagline>
         </Title>
 
         <Lede>
-          I&rsquo;m Jerry. Zille Muhammad Jafary if you&rsquo;re being formal. I&rsquo;ve been
-          building web apps since 2017, mostly Laravel and Vue, and mostly the unglamorous kind.
-          CRMs, HR systems, trader dashboards, the tools people have open all day. Since November
-          2024 I&rsquo;ve been contracting full time and putting the rest of my hours into TourHub,
-          which is mine. Think Uber Eats, but for tours.
+          Jerry, if that&rsquo;s a mouthful. I&rsquo;ve been building web apps since 2017, mostly
+          Laravel and Vue, and mostly the unglamorous kind. CRMs, HR systems, trader dashboards, the
+          tools people have open all day. Since November 2024 I&rsquo;ve been contracting full time
+          and putting the rest of my hours into TourHub, which is mine. Think Uber Eats, but for
+          tours.
         </Lede>
 
         <Actions>
