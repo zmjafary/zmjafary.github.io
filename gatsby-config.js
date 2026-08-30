@@ -2,7 +2,7 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Zille Muhamamd Jafary',
+    title: 'Zille Muhammad Jafary',
     description:
       'Zille Muhammad Jafary is a highly skilled Software Engineer with expertise in Laravel, PHP, Vue.js, React, Shopify and full-stack development. Explore his portfolio and resume to discover his latest projects and qualifications.',
     siteUrl: 'https://zmjafary.com', // No trailing slash allowed!
@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Zille Muhamamd Jafary',
+        name: 'Zille Muhammad Jafary',
         short_name: 'zmjafary',
         start_url: '/',
         background_color: config.colors.darkNavy,
