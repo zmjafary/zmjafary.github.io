@@ -120,11 +120,6 @@ const WorkRow = styled.article`
   gap: 56px;
   padding-block: 72px;
   border-top: 1px solid var(--n-300);
-  transition: background 0.3s ease;
-
-  &:hover {
-    background: var(--n-200);
-  }
 
   @media (max-width: 900px) {
     grid-template-columns: minmax(0, 1fr);
