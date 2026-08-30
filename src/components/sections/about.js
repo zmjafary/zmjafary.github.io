@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { stack } from '@config';
 import { Section, Container, SectionHead, Kicker, SectionTitle, Frame, ChipRow, Chip } from '../ui';
-import family from '@images/us.jpg';
+import headshot from '@images/me.png';
 
 const Block = styled(Container)`
   display: flex;
@@ -46,7 +46,7 @@ const Text = styled.div`
   }
 `;
 
-/* A photo of people, not a screenshot, so it keeps its square crop. */
+/* The headshot is a person, not a screenshot, so it stays untouched. */
 const Portrait = styled(Frame)`
   aspect-ratio: 1 / 1;
 
@@ -123,7 +123,7 @@ const About = () => (
         </Text>
 
         <Portrait>
-          <img src={family} alt="Zille Muhammad Jafary holding his daughter" />
+          <img src={headshot} alt="Zille Muhammad Jafary" />
         </Portrait>
       </Grid>
 

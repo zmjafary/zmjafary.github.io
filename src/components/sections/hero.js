@@ -1,17 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { email, resume, stats } from '@config';
-import {
-  Section,
-  Container,
-  Blob,
-  Frame,
-  StatusPill,
-  StatusDot,
-  PrimaryButton,
-  GhostButton,
-} from '../ui';
-import headshot from '@images/me.png';
+import { Section, Container, Blob, StatusPill, StatusDot, PrimaryButton, GhostButton } from '../ui';
 
 const StyledHero = styled(Section)`
   overflow: hidden;
@@ -43,37 +33,11 @@ const HeroBlob = styled(Blob)`
   }
 `;
 
-/* Copy carries the column; the headshot rides alongside it until the layout stacks. */
-const Lead = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  align-items: center;
-  gap: 64px;
-
-  @media (max-width: 1080px) {
-    grid-template-columns: minmax(0, 1fr) 240px;
-    gap: 48px;
-  }
-
-  @media (max-width: 900px) {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 48px;
-  }
-`;
-
 const Copy = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 960px;
-`;
-
-const Portrait = styled(Frame)`
-  aspect-ratio: 1 / 1;
-
-  @media (max-width: 900px) {
-    max-width: 260px;
-  }
 `;
 
 /* Two-tier heading: the name carries the h1 size, the thesis sits under it. */
@@ -83,15 +47,16 @@ const Title = styled.h1`
   gap: 16px;
 `;
 
-/* No max-width: the cap, not the size, was forcing the wrap. The floor is set
-   so the full name still holds one line at 320px. Verified by measurement. */
 const Name = styled.span`
-  font-size: clamp(24px, 6.2vw, 80px);
-  line-height: 1;
+  max-width: 16ch;
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.98;
   letter-spacing: -0.03em;
+  text-wrap: balance;
 `;
 
 const Tagline = styled.span`
+  max-width: 20ch;
   color: var(--n-700);
   font-size: clamp(24px, 3.2vw, 34px);
   line-height: 1.15;
@@ -157,12 +122,11 @@ const Hero = () => (
   <StyledHero>
     <HeroBlob aria-hidden="true" />
     <Inner>
-      <Lead>
-        <Copy>
-          <StatusPill>
-            <StatusDot aria-hidden="true" />
-            Contracting full time &middot; Building TourHub
-          </StatusPill>
+      <Copy>
+        <StatusPill>
+          <StatusDot aria-hidden="true" />
+          Contracting full time &middot; Building TourHub
+        </StatusPill>
 
           <Title>
             <Name>Zille Muhammad Jafary.</Name>
@@ -178,18 +142,13 @@ const Hero = () => (
             hours into TourHub, which is mine. Think Uber Eats, but for tours.
           </Lede>
 
-          <Actions>
-            <PrimaryButton href={resume} target="_blank" rel="noreferrer">
-              Read my r&eacute;sum&eacute;
-            </PrimaryButton>
-            <GhostButton href={`mailto:${email}`}>{email}</GhostButton>
-          </Actions>
-        </Copy>
-
-        <Portrait>
-          <img src={headshot} alt="Zille Muhammad Jafary" />
-        </Portrait>
-      </Lead>
+        <Actions>
+          <PrimaryButton href={resume} target="_blank" rel="noreferrer">
+            Read my r&eacute;sum&eacute;
+          </PrimaryButton>
+          <GhostButton href={`mailto:${email}`}>{email}</GhostButton>
+        </Actions>
+      </Copy>
 
       <StatBand>
         {stats.map(({ value, label }) => (
