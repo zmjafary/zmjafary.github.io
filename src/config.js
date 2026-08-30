@@ -40,7 +40,7 @@ module.exports = {
       title: 'Front-end work',
       body: 'Vue 3 with Inertia, and React when a project calls for it.',
       points: [
-        'Inertia apps, so there\'s no second API to keep in sync',
+        "Inertia apps, so there's no second API to keep in sync",
         'Components the next developer can pick up without ringing me',
         'Live updates that go out by email and WhatsApp',
         'Interfaces that still work properly on a phone',
@@ -67,7 +67,7 @@ module.exports = {
     },
     {
       index: '02',
-      title: 'I don\'t skip the boring parts',
+      title: "I don't skip the boring parts",
       body: 'Roles and permissions, audit trails, queues, invoices, payment states. None of it is fun and none of it demos well. But it is what decides whether anyone still trusts the thing in year three.',
     },
     {
@@ -77,8 +77,8 @@ module.exports = {
     },
     {
       index: '04',
-      title: 'I make sure I\'m not the only one who knows',
-      body: 'I\'ve mentored juniors at YumyApps, Bloomrix and SwishTag. Onboarding got quicker and code quality went up about 15%. Being the only person who understands a system isn\'t job security, it\'s a problem you\'ve made for someone.',
+      title: "I make sure I'm not the only one who knows",
+      body: "I've mentored juniors at YumyApps, Bloomrix and SwishTag. Onboarding got quicker and code quality went up about 15%. Being the only person who understands a system isn't job security, it's a problem you've made for someone.",
     },
   ],
 
@@ -88,8 +88,8 @@ module.exports = {
       range: 'Nov 2024 – Present',
       title: 'Software Engineer',
       points: [
-        'It\'s as much consultancy as it is building. Development planning, execution, code reviews, and AI integrations.',
-        'Day to day that\'s an Ionic app on a Laravel backend. Writing the APIs, improving their search, and getting the speed up.',
+        "It's as much consultancy as it is building. Development planning, execution, code reviews, and AI integrations.",
+        "Day to day that's an Ionic app on a Laravel backend. Writing the APIs, improving their search, and getting the speed up.",
         'DevOps and Docker management, and building out the pipelines.',
       ],
     },
@@ -98,9 +98,9 @@ module.exports = {
       range: 'Nov 2024 – Present',
       title: 'Founder & Owner',
       points: [
-        'TourHub puts Pakistan\'s tour packages in one place. Roughly 4,000 trips from 200 operators, with dates and real prices in Rupees side by side.',
+        "TourHub puts Pakistan's tour packages in one place. Roughly 4,000 trips from 200 operators, with dates and real prices in Rupees side by side.",
         'I built all of it. The crawl and extraction pipeline that writes the catalog, an operator workspace for claiming companies and handling leads, a Filament admin for the review queue, and Meilisearch across the lot.',
-        'Just crossed 10,000 unique page views. It\'s a one-man show, running alongside the contract work.',
+        "Just crossed 10,000 unique page views. It's a one-man show, running alongside the contract work.",
       ],
     },
     {

@@ -30,8 +30,7 @@ module.exports = {
         start_url: '/',
         background_color: config.colors.backgroundDark,
         theme_color: config.colors.background,
-        description:
-          'Software engineer building Laravel and Vue systems since 2017.',
+        description: 'Software engineer building Laravel and Vue systems since 2017.',
         lang: 'en',
         display: 'minimal-ui',
         icon: 'src/images/favicons/android-chrome-512x512.png',
