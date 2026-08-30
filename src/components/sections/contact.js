@@ -1,74 +1,71 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
-import sr from '@utils/sr';
-import { usePrefersReducedMotion } from '@hooks';
+import { email } from '@config';
+import { Section, Container, InvertedButton } from '../ui';
 
-const StyledContactSection = styled.section`
-  max-width: 600px;
-  margin: 0 auto 100px;
-  text-align: center;
+/* The one accent panel on the page, and the primary call to action. */
+const Panel = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  align-items: center;
+  gap: 64px;
+  padding: 72px 64px;
+  border-radius: var(--radius-lg);
+  background: var(--accent);
+  color: var(--on-accent);
 
-  @media (max-width: 768px) {
-    margin: 0 auto 50px;
-  }
-
-  .overline {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-md);
-    font-weight: 400;
-
-    &:before {
-      bottom: 0;
-      font-size: var(--fz-sm);
-    }
-
-    &:after {
-      display: none;
-    }
-  }
-
-  .title {
-    font-size: clamp(40px, 5vw, 60px);
-  }
-
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+  @media (max-width: 900px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 40px;
+    padding: 56px 40px;
   }
 `;
 
-const Contact = () => {
-  const revealContainer = useRef(null);
-  const prefersReducedMotion = usePrefersReducedMotion();
+const Copy = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+const Title = styled.h2`
+  max-width: 14ch;
+  color: var(--on-accent);
+  font-size: clamp(36px, 4.4vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+`;
 
-    sr.reveal(revealContainer.current, srConfig());
-  }, []);
+const Body = styled.p`
+  max-width: 44ch;
+  color: color-mix(in oklch, var(--on-accent) 82%, transparent);
+  font-size: 17px;
+  line-height: 1.6;
+`;
 
-  return (
-    <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+const Actions = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
+`;
 
-      <h2 className="title">Get In Touch</h2>
-
-      <p>
-        I'm all ears for new opportunities or even a friendly hello.
-        My inbox is always open, so drop me a line—I'll make sure to respond!
-      </p>
-
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
-    </StyledContactSection>
-  );
-};
+const Contact = () => (
+  <Section id="contact">
+    <Container>
+      <Panel>
+        <Copy>
+          <Title>Got something that needs building?</Title>
+          <Body>
+            Tell me what it is and roughly when you need it. If I&rsquo;m not the right person for
+            it I&rsquo;ll say so, and usually know someone who is.
+          </Body>
+        </Copy>
+        <Actions>
+          <InvertedButton href={`mailto:${email}`}>{email}</InvertedButton>
+        </Actions>
+      </Panel>
+    </Container>
+  </Section>
+);
 
 export default Contact;

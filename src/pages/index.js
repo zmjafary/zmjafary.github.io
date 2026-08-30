@@ -1,27 +1,33 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Layout, Hero, About, Jobs, Featured, Recommendations, Contact } from '@components';
+import {
+  Layout,
+  Hero,
+  Services,
+  Work,
+  Recommendations,
+  Approach,
+  Experience,
+  About,
+  Contact,
+} from '@components';
 
-const StyledMainContainer = styled.main`
-  counter-reset: section;
-`;
-
-const IndexPage = ({ location }) => (
-  <Layout location={location}>
-    <StyledMainContainer className="fillHeight">
+/**
+ * Section order follows the research on portfolio pages: proof sits directly
+ * under the work it backs up, rather than near the bottom of the page.
+ */
+const IndexPage = () => (
+  <Layout>
+    <main id="top">
       <Hero />
-      <About />
-      <Jobs />
-      <Featured />
+      <Services />
+      <Work />
       <Recommendations />
+      <Approach />
+      <Experience />
+      <About />
       <Contact />
-    </StyledMainContainer>
+    </main>
   </Layout>
 );
-
-IndexPage.propTypes = {
-  location: PropTypes.object.isRequired,
-};
 
 export default IndexPage;

@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Zille Muhammad Jafary',
+    title: 'Zille Muhammad Jafary, Software Engineer',
     description:
-      'Zille Muhammad Jafary is a highly skilled Software Engineer with expertise in Laravel, PHP, Vue.js, React, Shopify and full-stack development. Explore his portfolio and resume to discover his latest projects and qualifications.',
+      'Software engineer building Laravel and Vue systems since 2017. CRMs, HR and trader portals, Shopify apps and AI integrations. Contracting full time, and founder of TourHub.',
     siteUrl: 'https://zmjafary.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
   },
@@ -15,15 +15,23 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://zmjafary.com',
+        // gatsby-plugin-sitemap writes the index inside /sitemap/, so point at it there.
+        sitemap: 'https://zmjafary.com/sitemap/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'Zille Muhammad Jafary',
         short_name: 'zmjafary',
         start_url: '/',
-        background_color: config.colors.darkNavy,
-        theme_color: config.colors.navy,
+        background_color: config.colors.backgroundDark,
+        theme_color: config.colors.background,
         display: 'minimal-ui',
         icon: 'src/images/me.png',
       },
@@ -69,7 +77,7 @@ module.exports = {
               maxWidth: 700,
               linkImagesToOriginal: true,
               quality: 90,
-              tracedSVG: { color: config.colors.green },
+              tracedSVG: { color: config.colors.accent },
             },
           },
           {
@@ -140,6 +148,6 @@ module.exports = {
           },
         ],
       },
-    }
+    },
   ],
 };

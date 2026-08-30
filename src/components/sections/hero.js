@@ -1,109 +1,146 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React from 'react';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
+import { email, resume, stats } from '@config';
+import { Section, Container, Blob, StatusPill, StatusDot, PrimaryButton, GhostButton } from '../ui';
 
-const StyledHeroSection = styled.section`
-  ${({ theme }) => theme.mixins.flexCenter};
+const StyledHero = styled(Section)`
+  overflow: hidden;
+`;
+
+const Inner = styled(Container)`
+  position: relative;
+  z-index: 1;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  min-height: 100vh;
-  height: 100vh;
-  padding: 0;
+  gap: 96px;
 
-  @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
-    height: auto;
-    padding-top: var(--nav-height);
-  }
-
-  h1 {
-    margin: 0 0 30px 4px;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
-    font-weight: 400;
-
-    @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
-    }
-  }
-
-  .green {
-    color: var(--green);
-  }
-
-  h3 {
-    margin-top: 5px;
-    color: var(--slate);
-    line-height: 0.9;
-  }
-
-  p {
-    margin: 20px 0 0;
-    max-width: 540px;
-  }
-
-  .email-link {
-    ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+  @media (max-width: 900px) {
+    gap: 72px;
   }
 `;
 
-const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const prefersReducedMotion = usePrefersReducedMotion();
+const HeroBlob = styled(Blob)`
+  top: -340px;
+  right: -280px;
+  width: 620px;
+  height: 620px;
 
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
+  @media (max-width: 680px) {
+    top: -250px;
+    right: -200px;
+    width: 420px;
+    height: 420px;
+  }
+`;
 
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
-  }, []);
+const Copy = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 960px;
+`;
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Zille Muhammad Jafary.</h2>;
-  const three = <h3 className="medium-heading">but if that’s a mouthful, just go with Jerry!</h3>;
-  const four = (
-    <>
-      <p>
-      I'm a software engineer with over 8 years of experience in developing and designing cutting-edge web applications. I specialize in <span className="green">Laravel</span>, <span className="green">PHP</span>, <span className="green">Node.js</span>, <span className="green">React</span>, <span className="green">Vue</span>, and <span className="green">AWS</span>, delivering advanced <span className="green">E-commerce</span> and <span className="green">AI-driven solutions </span> for <span className="green">Shopify</span> and <span className="green">WordPress</span>.      </p>
-    </>
-  );
-  const five = (
-    <a
-      className="email-link"
-      href="/resume.pdf"
-      target="_blank"
-      rel="noreferrer">
-      Check out my resume!
-    </a>
-  );
+const Title = styled.h1`
+  max-width: 16ch;
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
 
-  const items = [one, two, three, four, five];
+  em {
+    color: var(--accent);
+    font-style: normal;
+  }
+`;
 
-  return (
-    <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      )}
-    </StyledHeroSection>
-  );
-};
+const Lede = styled.p`
+  max-width: 52ch;
+  color: var(--n-800);
+  font-size: 20px;
+  line-height: 1.6;
+`;
+
+const Actions = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+`;
+
+const StatBand = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  padding-block: 56px;
+  border-top: 1px solid var(--n-300);
+  border-bottom: 1px solid var(--n-300);
+
+  @media (max-width: 680px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 24px;
+  }
+`;
+
+const Stat = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+const StatNum = styled.span`
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: clamp(36px, 4vw, 52px);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  line-height: 1;
+`;
+
+const StatLabel = styled.span`
+  max-width: 28ch;
+  color: var(--n-700);
+  font-size: 14.5px;
+  line-height: 1.4;
+`;
+
+const Hero = () => (
+  <StyledHero>
+    <HeroBlob aria-hidden="true" />
+    <Inner>
+      <Copy>
+        <StatusPill>
+          <StatusDot aria-hidden="true" />
+          Contracting full time &middot; Building TourHub
+        </StatusPill>
+
+        <Title>
+          Most of what I build sits behind a <em>login</em>.
+        </Title>
+
+        <Lede>
+          I&rsquo;m Jerry. Zille Muhammad Jafary if you&rsquo;re being formal. I&rsquo;ve been
+          building web apps since 2017, mostly Laravel and Vue, and mostly the unglamorous kind.
+          CRMs, HR systems, trader dashboards, the tools people have open all day. Since November
+          2024 I&rsquo;ve been contracting full time and putting the rest of my hours into TourHub,
+          which is mine. Think Uber Eats, but for tours.
+        </Lede>
+
+        <Actions>
+          <PrimaryButton href={resume} target="_blank" rel="noreferrer">
+            Read my r&eacute;sum&eacute;
+          </PrimaryButton>
+          <GhostButton href={`mailto:${email}`}>{email}</GhostButton>
+        </Actions>
+      </Copy>
+
+      <StatBand>
+        {stats.map(({ value, label }) => (
+          <Stat key={label}>
+            <StatNum>{value}</StatNum>
+            <StatLabel>{label}</StatLabel>
+          </Stat>
+        ))}
+      </StatBand>
+    </Inner>
+  </StyledHero>
+);
 
 export default Hero;
