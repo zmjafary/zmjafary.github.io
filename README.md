@@ -1,68 +1,56 @@
-## 🙏 A Special Thanks
+# zmjafary.com
 
-I want to express my heartfelt thanks and appreciation to Brittany Chiang for her exceptional work on [brittanychiang.com](https://brittanychiang.com). Her fourth iteration of the site, built with Gatsby, served as the inspiration for my own portfolio. Brittany’s creativity, design, and attention to detail are truly inspiring.
+Personal site for Zille Muhammad Jafary, software engineer. One page, built
+with Gatsby and styled-components, deployed to GitHub Pages.
 
-Using Brittany’s work as a foundation for my own portfolio has been both an honor and a learning experience. If you’re interested in web design and development, I highly recommend checking out Brittany’s site and acknowledging her contribution to the web community.
+## Running it
 
-**Please note:** While I have used the structure and design as inspiration, I have customized the content and styling to create a unique representation of my own work.
+Node 20 is what CI uses, and what the build is verified against.
 
-## 🚨 Forking This Repo (Please Read!)
+```sh
+nvm use 20
+yarn install
+yarn develop      # http://localhost:8000
+yarn build        # production build into public/
+yarn serve        # serve the production build
+```
 
-If you wish to use or build upon this code, please give credit where it is due. I encourage you to link back to [brittanychiang.com](https://brittanychiang.com) and acknowledge Brittany Chiang’s original work.
+## How it is put together
 
-### TL;DR
+| Path | What lives there |
+| --- | --- |
+| `src/config.js` | All copy that is not tied to a layout: nav, stats, capabilities, how-I-work, jobs, stack. Edit the site's words here. |
+| `src/components/ui.js` | Shared primitives: container, section, buttons, cards, chips, tags, bullets, frames. |
+| `src/components/sections/` | One file per section of the page. |
+| `src/components/head.js` | Every meta tag, the Person JSON-LD, and the Google Fonts link. |
+| `src/styles/variables.js` | The design tokens. Nothing else defines a colour. |
+| `src/images/work/` | Project screenshots, imported directly by `sections/work.js`. |
 
-Feel free to use this as a reference for your own projects, but please remember to credit Brittany Chiang by linking back to [brittanychiang.com](https://brittanychiang.com). Her effort and creativity are what made this possible.
+Project rows and recommendations keep their own data next to the component
+that renders them, since both carry images or verbatim quotes.
 
-## 🛠 Installation & Set Up
+## Design rules worth keeping
 
-1. Install the Gatsby CLI
+- **Tokens only.** No component hard-codes a hex. Colours, radii, shadows and
+  fonts all come from `src/styles/variables.js`.
+- **One accent.** Lime appears on primary buttons, section kickers, large
+  numerals, one phrase in the h1, and the single call-to-action panel. Nowhere
+  else.
+- **One inverted band and one accent panel** per page.
+- **Two faces.** Caprasimo for display, Figtree for everything else, including
+  uppercase labels. Display type never sits below 20px except in the brand
+  lockup and buttons.
+- **Flush left.** Nothing is centred except the container.
+- Every `fr` grid track is written as `minmax(0, 1fr)`.
 
-   ```sh
-   npm install -g gatsby-cli
-   ```
+## SEO
 
-2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+`src/components/head.js` emits the canonical URL, description, robots
+directives, Open Graph and Twitter cards, and a `Person` JSON-LD block.
+`gatsby-plugin-sitemap` writes `/sitemap/sitemap-index.xml` and
+`gatsby-plugin-robots-txt` is configured to point at that exact path.
 
-   ```sh
-   nvm install
-   ```
+## Deploying
 
-3. Install dependencies
-
-   ```sh
-   yarn
-   ```
-
-4. Start the development server
-
-   ```sh
-   npm start
-   ```
-
-## 🚀 Building and Running for Production
-
-1. Generate a full static production build
-
-   ```sh
-   npm run build
-   ```
-
-1. Preview the site as it will appear once deployed
-
-   ```sh
-   npm run serve
-   ```
-
-## 🎨 Color Reference
-
-| Color          | Hex                                                                |
-| -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+Pushing to `main` runs `.github/workflows/gatsby.yml`, which builds on Node 20
+and publishes `public/` to GitHub Pages.
