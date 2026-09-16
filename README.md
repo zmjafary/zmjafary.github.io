@@ -7,7 +7,7 @@ HTML and CSS, deployed to GitHub Pages. No build step, no dependencies, no Node.
 
 Open `index.html` in a browser. That's it.
 
-To exercise the absolute URLs (`/resume.pdf`, `/assets/…`, `/404.html`) the way the
+To exercise the absolute URLs (`/Zille_Muhammad_Jafary_Resume_2026.pdf`, `/assets/…`, `/404.html`) the way the
 live site serves them, run any static server from the repo root:
 
 ```sh
